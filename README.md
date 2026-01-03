@@ -1,125 +1,61 @@
-# Neuroleap – Full-Stack Conversational AI Web Application
+# AI Chatbot Web Application
 
-A MERN-based conversational chatbot inspired by ChatGPT, built using the OpenAI API. Developed as part of a full-stack learning initiative using resources from Apna College.
+## Overview
+This is a full-stack AI-powered chatbot web application that allows users to interact with an 
+intelligent assistant through a chat interface. The application uses an AI API to generate 
+human-like responses.
 
----
+## Features
+- Secure user authentication using JWT
+- Real-time chat interface
+- AI-powered responses
+- Session-based message handling
+- Clean and responsive UI
 
-## 📌 Project Goal
+## Tech Stack
+Frontend:
+- React.js
+- HTML, CSS, JavaScript
 
-To create an intelligent, responsive AI chatbot that can understand and generate human-like responses using OpenAI's language model, packaged within a dynamic and scalable web interface.
+Backend:
+- Node.js
+- Express.js
 
----
+Database:
+- MongoDB (Atlas)
 
-## 🚀 Key Features
+AI Integration:
+- OpenAI API (can be replaced with mock responses if key is unavailable)
 
-- 🤖 Chat with real-time OpenAI responses
-- 🔐 JWT-based secure login & registration
-- 📜 Maintains session chat history
-- 🎨 Responsive UI built with Tailwind CSS
-- 📥 API integration for OpenAI GPT-3.5/GPT-4
-- ⚙️ Modular and scalable full-stack architecture
+## How It Works
+- User sends a message from the frontend
+- Backend processes the request
+- Message is sent to AI API
+- AI-generated response is returned and displayed
 
----
+## How to Run the Project
 
-## 🛠️ Tech Stack
+### Backend
+1. Go to backend folder
+2. Install dependencies:
+   npm install
+3. Create `.env` file:
+   PORT=5000  
+   MONGO_URI=your_mongodb_connection_string  
+   JWT_SECRET=your_secret_key  
+   OPENAI_API_KEY=your_api_key
+4. Start server:
+   npm start
 
-**Frontend:** React.js, Tailwind CSS, Axios  
-**Backend:** Node.js, Express.js  
-**Database:** MongoDB  
-**Authentication:** JSON Web Tokens (JWT)  
-**AI Integration:** OpenAI API
+### Frontend
+1. Go to frontend folder
+2. Install dependencies:
+   npm install
+3. Start app:
+   npm start
 
----
-
-## 💡 How I Developed It
-
-- Followed Apna College’s MERN stack learning roadmap
-- Integrated OpenAI's language API for smart, contextual responses
-- Designed a clean chat UI and built reusable components in React
-- Implemented user authentication and role-based routing
-- Managed API calls securely with Axios and backend routing
-
----
-
-## ⚙️ How to Run the Project Locally
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/triveninelakurthi9/neuroleap.git
-cd neuroleap
-```
-
-### 2. Install Dependencies
-
-#### Backend
-
-```bash
-cd server
-npm install
-```
-
-#### Frontend
-
-```bash
-cd ../client
-npm install
-```
-
-### 3. Set Up Environment Variables
-
-Create a `.env` file in both `/client` and `/server` folders.
-
-#### Example `.env` for Server
-
-```env
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-OPENAI_API_KEY=your_openai_api_key
-```
-
-### 4. Run the Project
-
-#### Backend
-
-```bash
-cd server
-npm start
-```
-
-#### Frontend
-
-```bash
-cd ../client
-npm start
-```
-
-### 5. Open in Browser
-
-Visit: [http://localhost:3000](http://localhost:3000)
-
----
-
-## 📁 Folder Structure
-
-```
-neuroleap/
-├── client/
-│   ├── public/
-│   └── src/
-│       ├── components/
-│       ├── pages/
-│       ├── utils/
-│       └── App.jsx
-│
-├── server/
-│   ├── routes/
-│   ├── controllers/
-│   ├── middleware/
-│   └── server.js
-│
-├── .env
-├── package.json
-├── README.md
-```
+## Learning Outcomes
+- API integration
+- Authentication and authorization
+- Full-stack application development
+- Understanding AI-based systems
